@@ -1,0 +1,34 @@
+.engagement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.engagement-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.engagement-text li {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  color: var(--dark);
+  position: relative;
+  padding-left: 24px;
+}
+
+.engagement-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .engagement-grid {
+    grid-template-columns: 1fr;
+  }
+}
